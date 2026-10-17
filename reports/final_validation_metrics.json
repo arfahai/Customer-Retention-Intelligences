@@ -1,0 +1,98 @@
+{
+  "churn": {
+    "cohort": {
+      "snapshot_cutoff": "2011-06-09",
+      "customers": 2626,
+      "no_return_rate": 0.2977913175932978,
+      "mean_predicted_probability": 0.38944541350915113
+    },
+    "metrics": {
+      "ROC-AUC": 0.7414466493944556,
+      "PR-AUC": 0.49027045404035674,
+      "Brier": 0.18740767433687813,
+      "LogLoss": 0.5483656958839314
+    },
+    "bootstrap_95ci": {
+      "ROC-AUC": [
+        0.7231031392820402,
+        0.7612690954204466
+      ],
+      "PR-AUC": [
+        0.4572521143740285,
+        0.5279861088648143
+      ],
+      "Brier": [
+        0.18197125063425995,
+        0.19290906424625218
+      ],
+      "LogLoss": [
+        0.535984536787756,
+        0.5609304345681426
+      ]
+    },
+    "baselines": {
+      "Production model": {
+        "ROC-AUC": 0.7414466493944556,
+        "PR-AUC": 0.49027045404035674,
+        "Brier": 0.18740767433687813,
+        "LogLoss": 0.5483656958839314
+      },
+      "Recency-only logistic": {
+        "ROC-AUC": 0.6647681566260382,
+        "PR-AUC": 0.42670291813093,
+        "Brier": 0.20175295316906824,
+        "LogLoss": 0.5921598742216894
+      },
+      "Constant (dev prevalence)": {
+        "ROC-AUC": 0.5,
+        "PR-AUC": 0.2977913175932978,
+        "Brier": 0.21473024738270943,
+        "LogLoss": 0.6213913433124231
+      }
+    },
+    "capacity": {
+      "capacity": 100,
+      "precision_at_capacity": 0.56,
+      "base_rate": 0.2977913175932978,
+      "lift_at_capacity": 1.8805115089514068
+    },
+    "history_groups": [
+      {
+        "Group": "Single-purchase",
+        "Customers": 1282,
+        "NoReturnRate": 0.4516380655226209,
+        "ROC-AUC": 0.5847920459319423,
+        "PR-AUC": 0.5188466253468961
+      },
+      {
+        "Group": "Established",
+        "Customers": 1344,
+        "NoReturnRate": 0.15104166666666666,
+        "ROC-AUC": 0.7321250480306359,
+        "PR-AUC": 0.31665021656986553
+      }
+    ]
+  },
+  "clv": {
+    "customers_repeat": 3337,
+    "summary": [
+      {
+        "Metric": "Purchase-date count (180d)",
+        "PredictedMean": 2.1517607323217,
+        "ActualMean": 2.062930776146239,
+        "MAE": 1.2506991628330435,
+        "RMSE": 1.9984508919243829
+      },
+      {
+        "Metric": "Purchase value (180d, GBP)",
+        "PredictedMean": 1072.8511688169265,
+        "ActualMean": 1213.3732996703625,
+        "MAE": 717.5149753311176,
+        "RMSE": 2857.3875493057335
+      }
+    ],
+    "top_decile_share_predicted_value": 0.5975488009013256,
+    "top_decile_share_historical_value": 0.5907801767296866,
+    "spearman_predicted_vs_actual_value": 0.6367179705733956
+  }
+}

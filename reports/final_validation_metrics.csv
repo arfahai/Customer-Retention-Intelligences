@@ -1,0 +1,30 @@
+Section,Metric,Value,Lower95,Upper95
+churn_final_test,ROC-AUC,0.7414466493944556,0.7231031392820402,0.7612690954204466
+churn_final_test,PR-AUC,0.49027045404035674,0.4572521143740285,0.5279861088648143
+churn_final_test,Brier,0.18740767433687813,0.18197125063425995,0.19290906424625218
+churn_final_test,LogLoss,0.5483656958839314,0.535984536787756,0.5609304345681426
+baseline: Production model,ROC-AUC,0.7414466493944556,,
+baseline: Production model,PR-AUC,0.49027045404035674,,
+baseline: Production model,Brier,0.18740767433687813,,
+baseline: Production model,LogLoss,0.5483656958839314,,
+baseline: Recency-only logistic,ROC-AUC,0.6647681566260382,,
+baseline: Recency-only logistic,PR-AUC,0.42670291813093,,
+baseline: Recency-only logistic,Brier,0.20175295316906824,,
+baseline: Recency-only logistic,LogLoss,0.5921598742216894,,
+baseline: Constant (dev prevalence),ROC-AUC,0.5,,
+baseline: Constant (dev prevalence),PR-AUC,0.2977913175932978,,
+baseline: Constant (dev prevalence),Brier,0.21473024738270943,,
+baseline: Constant (dev prevalence),LogLoss,0.6213913433124231,,
+capacity_top_100,precision_at_capacity,0.56,,
+capacity_top_100,lift_at_capacity,1.8805115089514068,,
+clv_holdout,Purchase-date count (180d) - PredictedMean,2.1517607323217,,
+clv_holdout,Purchase-date count (180d) - ActualMean,2.062930776146239,,
+clv_holdout,Purchase-date count (180d) - MAE,1.2506991628330435,,
+clv_holdout,Purchase-date count (180d) - RMSE,1.9984508919243829,,
+clv_holdout,"Purchase value (180d, GBP) - PredictedMean",1072.8511688169265,,
+clv_holdout,"Purchase value (180d, GBP) - ActualMean",1213.3732996703625,,
+clv_holdout,"Purchase value (180d, GBP) - MAE",717.5149753311176,,
+clv_holdout,"Purchase value (180d, GBP) - RMSE",2857.3875493057335,,
+clv_holdout,top-decile share (predicted value),0.5975488009013256,,
+clv_holdout,top-decile share (historical value baseline),0.5907801767296866,,
+clv_holdout,Spearman (predicted vs actual value),0.6367179705733956,,

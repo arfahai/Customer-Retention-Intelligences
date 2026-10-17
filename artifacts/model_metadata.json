@@ -1,0 +1,34 @@
+{
+  "target": "NoPurchaseNext180Days",
+  "features": [
+    "RecencyDays",
+    "PurchaseOrderCount",
+    "AvgOrderValue",
+    "TenureDays",
+    "MedianPurchaseGap",
+    "SinglePurchaseHistory",
+    "CancellationOrderCount",
+    "CancellationRate",
+    "CancellationValueRatio"
+  ],
+  "log1p_features": [
+    "PurchaseOrderCount",
+    "AvgOrderValue"
+  ],
+  "production_refit": "train+validation only",
+  "final_test_excluded": true,
+  "train_cutoffs": [
+    "2010-06-09",
+    "2010-09-09"
+  ],
+  "validation_cutoff": "2010-12-09",
+  "n_training_rows": 8939,
+  "training_positive_rate": 0.372749,
+  "calibration": {
+    "method": "sigmoid",
+    "cv": 5
+  },
+  "random_state": 42,
+  "python": "3.12.3",
+  "scikit_learn": "1.3.2"
+}
