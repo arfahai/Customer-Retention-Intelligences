@@ -463,7 +463,7 @@ The full analytical record, experiments, comparisons, methodological decisions, 
 notebooks/analysis_final.ipynb      (stored with executed outputs)
 reports/final_validation_metrics.md (concise, versioned results)
 ```
-```
+
 The notebook should be read alongside this README when reviewing or studying the project methodology. Note that the notebook's final-test table evaluates the model fitted on the training snapshots only (evaluation protocol), while `reports/` evaluates the saved production model (train + validation fit); both use the same untouched June 2011 snapshot.
 ---
 
