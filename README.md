@@ -470,5 +470,4 @@ The notebook should be read alongside this README when reviewing or studying the
 ## 20. Live Demo
 
 **Streamlit Dashboard:**  
-https://arfahai-customer-retention-intelligence-app-b3fsgt.streamlit.app/
-
+https://customer-retention-intelligences-fiyusbxhsaclwvdf6sfdua.streamlit.app/
